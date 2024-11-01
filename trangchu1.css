@@ -1,0 +1,52 @@
+/***************************quang cao**************************/
+#arrow_right,#arrow_left{
+position: absolute;
+font-size: 40px;
+line-height: 402px;
+z-index: 10;
+cursor: pointer;
+}
+.quang_cao {
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+    height:800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quang_cao img{
+    width: 100%;
+    opacity: 0; /* Ẩn hình ảnh */
+    position: absolute;
+    transition: opacity 0.5s ease; /* Thêm hiệu ứng mờ dần */
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+.quang_cao img.active {
+    opacity: 1; /* Hiện hình ảnh đang hoạt động */
+}
+/*---------------------------------------sp moiw------------------------------*/
+.sp_moi{
+    margin-top: 30px;
+    text-align: center;
+}
+#sp_moi{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    padding: 10px 30px;
+}
+#sp_moi div{
+    background-color: beige;
+    border: 1px solid rgba(187, 209, 154, 0.336);
+    text-align: center;
+    padding-bottom: 10px;
+}
+#sp_moi div img{
+    width: 100%;
+}
+
+
